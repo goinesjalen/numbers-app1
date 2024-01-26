@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom tutorial</title>
+</head>
+
+<body>
+    <h1>Arithmetic</h1>
+    <div style="display: flex; align-items: flex-start;">
+        <input id="input1"/>
+        <label>+</label>
+        <input id="input2"/>
+        <button onclick="arithmeticAdition()">
+        =
+        </button>
+        <p id="output1"></p>
+    </div>
+
+
+
+
+</body>
+
+<script>
+    function arithmeticAdition(){
+        let num1 = document.getElementById('input1')
+        let num2 = document.getElementById('input2')
+        document.getElementById('output1').innerHTML = Number(num1.value) + Number(num2.value)
+    }
+
+</script>
+
+</html>
